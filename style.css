@@ -6,8 +6,8 @@ body {
     height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 1fr 4fr;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 250px 1fr 250px;
     font-family: sans-serif;
 }
 
@@ -40,16 +40,64 @@ body {
 }
 
 .header-container {
-    grid-row: 0 / 2;
+    font-size: 1rem;
+    font-weight: bold;
+    grid-row: 1 / 2;
     grid-column: 2 / 4;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0 0 8px grey;
 }
 
 .header-first-section {
     display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input[name="search-bar"] {
+    margin-right: auto;
 }
 
 .header-second-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
+.second-section-greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.greeting {
+    font-size: 0.8rem;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.main-section {
+    grid-area: 2 / 2 / -1 / -1;
+    padding: 30px 20px;
+    background-color: #e0e6ef;
+}
+
+.main-section .title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card > .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
