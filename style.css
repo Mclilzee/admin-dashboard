@@ -238,6 +238,10 @@ input[name="search-bar"] {
     height: 80px;
 }
 
+.profile-picture:hover {
+    cursor: pointer;
+}
+
 button {
     font-family: "Roboto";
     border: none;
@@ -248,6 +252,19 @@ button {
     color: white;
     width: 100px;
     height: 40px;
+}
+
+button:hover,
+img:not(.profile-picture):hover,
+.menu-item:hover {
+    transform: scale(120%);
+    cursor: pointer;
+}
+
+.menu-item:hover,
+.trending-card .hashtag:hover {
+    transform: translatex(10%) scale(120%);
+    cursor: pointer;
 }
 
 
