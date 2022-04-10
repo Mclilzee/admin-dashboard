@@ -3,8 +3,8 @@
 }
 
 @font-face {
-    font-family: "Roboto Light";
-    src: url(assets/fonts/Roboto-regular.ttf)
+    font-family: "Roboto";
+    src: url(assets/fonts/Roboto.ttf)
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     display: grid;
     grid-template-rows: min-content 1fr;
     grid-template-columns: 250px 1fr;
-    font-family: "Roboto Light", serif;
+    font-family: "Roboto", serif;
 }
 
 .main-menu-container {
@@ -73,7 +73,6 @@ input[name="search-bar"] {
     border-radius: 20px;
     border: none;
     height: 30px;
-
     background-color: #e0e6ef;
 }
 
@@ -89,6 +88,7 @@ input[name="search-bar"] {
     flex-direction: column;
     justify-content: center;
     margin-right: auto;
+    gap: 5px;
 }
 
 .greeting {
@@ -104,7 +104,7 @@ input[name="search-bar"] {
     padding: 30px 20px;
     background-color: #e0e6ef;
     display: grid;
-    grid-template-rows: 49vh 1fr;
+    grid-template-rows: 50vh 1fr;
     grid-template-columns: 4fr 1fr;
 }
 
@@ -118,7 +118,7 @@ input[name="search-bar"] {
     grid-row: 1 / 5;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
     margin-right: 20px;
 }
 
@@ -165,7 +165,7 @@ input[name="search-bar"] {
 .announcements {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
     margin-bottom: 50px;
 }
 
@@ -190,7 +190,7 @@ input[name="search-bar"] {
 .trending {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
 }
 
 .trending-cards-container {
@@ -202,6 +202,7 @@ input[name="search-bar"] {
 
 .trending-card {
     display: flex;
+    gap: 20px;
 }
 
 .trending-card .hashtag {
@@ -226,7 +227,28 @@ input[name="search-bar"] {
     display: none;
 }
 
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
 
+.profile-picture.medium {
+    width: 80px;
+    height: 80px;
+}
+
+button {
+    font-family: "Roboto";
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #1991d3;
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
 
 
 
